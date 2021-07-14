@@ -9,6 +9,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // =========express==setup=========
+
+//=======cors==============
+// co dinh ten mien nhan data
 var corsOptions = {
   origin: "http://localhost:3000",
   credentials: true,
@@ -32,8 +35,6 @@ mongoose.connect(
 
 app.get("/", (req, res) => {
   res.send("nodejs mongoose req database");
-  res.send("get data use  /0011001111001100/api");
-  res.send("get data use  /0011001111001100/cart");
 });
 app.use("/0011001111001100/api", postRoute);
 app.use("/0011001111001100/cart", postDataCart);
