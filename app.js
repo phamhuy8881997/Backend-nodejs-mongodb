@@ -4,6 +4,9 @@ require("dotenv").config();
 var bodyParser = require("body-parser");
 var postRoute = require("./routes/post");
 var postDataCart = require("./routes/postDataCart");
+var postCarousel = require("./routes/postCarousel");
+var postNews = require("./routes/postNews");
+var postBanner = require("./routes/postBanner");
 // =========express==setup=========
 const app = express();
 app.use(express.json());
@@ -38,6 +41,9 @@ app.get("/", (req, res) => {
 });
 app.use("/0011001111001100/api", postRoute);
 app.use("/0011001111001100/cart", postDataCart);
+app.use("/0011001111001100/carousel", postCarousel);
+app.use("/0011001111001100/news", postNews);
+app.use("/0011001111001100/banner", postBanner);
 
 // ====== listen sever ===============================
 var port = process.env.PORT || 8080;
