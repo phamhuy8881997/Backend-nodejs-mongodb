@@ -11,6 +11,20 @@ router.get("/", async (req, res) => {
     res.json({ message: err });
   }
 });
+// ============post api===============================
+router.post("/", async (req, res) => {
+  var post_todo = new DataBanner({
+    img: req.body.img,
+    toLink: req.body.toLink,
+    textLink: req.body.textLink,
+  });
+  try {
+    const Post_todo = await post_todo.save();
+    res.json(Post_todo);
+  } catch (err) {
+    res.json({ message: err });
+  }
+});
 // ============update api============================
 router.put("/:id", async (req, res) => {
   try {
