@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 // co dinh ten mien nhan data
 var corsOptions = {
   origin: "http://localhost:3000",
+  origin1: "https://hieule.web.app/",
   credentials: true,
 };
 app.use(cors(corsOptions));
