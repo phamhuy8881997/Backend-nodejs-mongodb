@@ -15,15 +15,15 @@ app.use(express.urlencoded({ extended: false }));
 
 //=======cors==============
 // co dinh ten mien nhan data
-var corsOptions = {
-  origin: `http://localhost:3000`,
-  credentials: true,
-};
+// var corsOptions = {
+//   origin: `http://localhost:3000`,
+//   credentials: true,
+// };
 var corsOptions1 = {
   origin: `https://hieule.web.app`,
   credentials: true,
 };
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 app.use(cors(corsOptions1));
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
