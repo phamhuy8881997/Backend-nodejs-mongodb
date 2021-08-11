@@ -19,12 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 //   origin: `http://localhost:3000`,
 //   credentials: true,
 // };
-var corsOptions1 = {
-  origin: `https://hieule.web.app`,
-  credentials: true,
-};
+// var corsOptions1 = {
+//   origin: `https://hieule.web.app`,
+//   credentials: true,
+// };
 //app.use(cors(corsOptions));
-app.use(cors(corsOptions1));
+//app.use(cors(corsOptions1));
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
 
