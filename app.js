@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 //   credentials: true,
 // };
 var corsOptions1 = {
-  origin: `https://hopeful-beaver-d09bbb.netlify.app/`,
+  origin: `https://hieule.netlify.app`,
   credentials: true,
 };
 //app.use(cors(corsOptions));
