@@ -15,19 +15,14 @@ app.use(express.urlencoded({ extended: false }));
 
 //=======cors==============
 // co dinh ten mien nhan data
-// var corsOptions = {
-//   origin: `http://localhost:3000`,
-//   credentials: true,
-// };
 var corsOptions = {
   origin: [
     "https://hieulemobile-3c673.firebaseapp.com",
     `https://hieule.netlify.app`,
-    "http://localhost",
+    "http://localhost:3000",
   ],
   credentials: true,
 };
-//app.use(cors(corsOptions));
 app.use(cors(corsOptions));
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
